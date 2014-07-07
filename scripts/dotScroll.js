@@ -2,10 +2,13 @@
 var d;
 function init(hash)
 {
+	
 	hash = parseInt(hash);
 	d = new DotScroll();
 	d.generateDot(16,16);
 	if(hash > 0) d.changePage(hash);
+	
+	document.getElementById("loading").style.visibility = "hidden";
 }
 
 function DotScroll()
